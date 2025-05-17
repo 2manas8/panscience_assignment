@@ -12,6 +12,9 @@ app.use('/api/auth', auth)
 const admin = require('./routes/admin')
 app.use('/api/admin', admin)
 
+const task = require('./routes/task')
+app.use('/api/task', task)
+
 const dbConnect = require('./config/database')
 dbConnect()
 
